@@ -40,13 +40,18 @@ public:
 	bool writeOutputData();
 	bool writeRendererData();
 
-	virtual void transformUpdateCallback(MayaObject&);
+	virtual void transformUpdateCallback(MayaObject*);
 	virtual void deformUpdateCallback(MayaObject&);
 	virtual bool renderImage(); // the actual render job, overwrite
 	virtual MayaObject* mayaObjectCreator(MObject&);
 	virtual void mayaObjectDeleter(MayaObject *);
 	virtual void getRenderGlobals();
 
+	virtual void shapeUpdateCallback(MayaObject *);
+	virtual void updateInteraciveRenderScene(std::vector<MObject> mobjList);
+	virtual void stopRendering();
+	virtual void userThreadProcedure();
+	virtual MayaObject* mayaObjectCreator(MDagPath&);
 
 	mtm_MayaScene();
 	~mtm_MayaScene();

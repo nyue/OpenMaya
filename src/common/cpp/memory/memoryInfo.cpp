@@ -1,6 +1,6 @@
 #include "memoryInfo.h"
 
-
+#ifdef WIN32
 #include "windows.h"
 #include "psapi.h"
 
@@ -22,4 +22,6 @@ size_t getPeakUsage()
 {
 	return (peakUsage);
 }
+#else
 
+#endif

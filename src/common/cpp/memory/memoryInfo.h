@@ -5,6 +5,8 @@
 #ifndef MEMINFO_H
 #define MEMINFO_H
 
+#include <stdlib.h>
+
 static size_t startUsage = 0;
 
 size_t getCurrentUsage();

@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 #include <maya/MFnNumericAttribute.h>
 #include <maya/MFnTypedAttribute.h>
 #include <maya/MFnGenericAttribute.h>

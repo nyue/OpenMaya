@@ -9,8 +9,10 @@
 #include <maya/MMatrix.h>
 #include <maya/MPlug.h>
 #include <maya/MObjectArray.h>
+#ifdef WIN32
 #include <direct.h>
 #include <io.h>
+#endif
 #include <fstream>
 #include <math.h>
 

@@ -31,7 +31,7 @@ MStatus mayatomantra::doIt( const MArgList& args)
 {
 	MStatus stat = MStatus::kSuccess;
 	MGlobal::displayInfo("Executing mayatomantra...");
-	mtm_MayaScene mayaScene = mtm_MayaScene();
+	mtm_MayaScene mayaScene;
 
 	// clear shader list
 	// clearShaderNodes();

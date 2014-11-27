@@ -3,7 +3,7 @@
 
 #include <fstream>
 #include "shadingtools/material.h" // from framework
-#include "shadingtools/readShaderDefs.h"
+#include "shadingtools/shaderDefs.h"
 
 struct shadingNodeUserData{
 	bool isProjectionTransformPart;

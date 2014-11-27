@@ -16,9 +16,26 @@
 
 static Logging logger;
 
-void mtm_MayaScene::transformUpdateCallback(MayaObject& obj)
+void mtm_MayaScene::transformUpdateCallback(MayaObject* obj)
 {
 }
+void mtm_MayaScene::shapeUpdateCallback(MayaObject *)
+{
+}
+void mtm_MayaScene::updateInteraciveRenderScene(std::vector<MObject> mobjList)
+{
+}
+void mtm_MayaScene::stopRendering()
+{
+}
+void mtm_MayaScene::userThreadProcedure()
+{
+}
+MayaObject* mtm_MayaScene::mayaObjectCreator(MDagPath&)
+{
+	return NULL;
+}
+
 void mtm_MayaScene::deformUpdateCallback(MayaObject& obj)
 {
 }
